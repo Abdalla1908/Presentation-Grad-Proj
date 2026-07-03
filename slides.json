@@ -909,7 +909,14 @@
             "Future enhancements for NAWAH include expanding the dataset to cover more categories and governorates, improving the accuracy of the NLP models through continuous learning, integrating additional languages for broader accessibility, and developing mobile applications to increase citizen engagement. Additionally, incorporating feedback loops from government authorities will help refine the recommendation engine and forecasting model for even better performance."
         ]
     }
-}
+},
+{
+    "body":{
+        "type":"break",
+        "data":[
+            "Thank you for your attention. We look forward to your feedback."
+        ]
+}}
 
 ]
     
