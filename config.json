@@ -1,0 +1,22 @@
+{
+    "title": "Nawah - Preview",
+    "icon": "./Assets/BG.png",
+
+    "intro": {
+        "src": "",
+        "playback": 1
+    },
+
+    "background": {
+        "src": "./Assets/BG.png",
+        "blur": 0.75,
+        "overlay": 0.25,
+        "fallback": "#000820"
+    },
+
+    "references": [
+        {"name": "Github", "icon": "fa-brands fa-github", "url": "https://github.com/asem-sharif-ai" },
+        {"name": "Github", "icon": "fa-brands fa-github", "url": "https://github.com/asem-sharif-ai" },
+        {"name": "Github", "icon": "fa-brands fa-github", "url": "https://github.com/asem-sharif-ai" }
+    ]
+}

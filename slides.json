@@ -1,0 +1,915 @@
+[
+    {
+        "body": {
+            "type": "break",
+            "data": "Nawah",
+            "metadata": "An AI Smart Complaint Management System"
+        }
+    },
+    {
+        "body": {
+            "type": "members",
+            "data": [
+                {
+                    "title": "Assoc. Prof. Mahmoud Emam",
+                    "subtitle": "Faculty of Artificial Intelligence",
+                    "image": "",
+                    "link": ""
+                },
+                {
+                    "title": "Mohamed Sarhan",
+                    "subtitle": "AI & Full Stack Engineer",
+                    "image": "./images/mo_sarhan.png",
+                    "link": ""
+                },
+                {
+                    "title": "Abdullah Hassan",
+                    "subtitle": "AI , NLP & LLM Engineer",
+                    "image": "./images/abdalla.jpg",
+                    "link": "https://github.com/Abdalla1908"
+                },
+                {
+                    "title": "Ola Ezzat",
+                    "subtitle": "Dashboard & Visualization Engineer",
+                    "image": "./images/ola.png",
+                    "link": ""
+                },
+                {
+                    "title": "Asmaa Mohammed",
+                    "subtitle": "Recommendation Engine Engineer",
+                    "image": "./images/asmaa.png",
+                    "link": ""
+                },
+                {
+                    "title": "Hend Mahmoud",
+                    "subtitle": "Forecasting Model Engineer",
+                    "image": "./images/hend.png",
+                    "link": ""
+                },
+                {
+                    "title": "Ahmed Reda",
+                    "subtitle": " ",
+                    "image": "./images/ahmed.png",
+                    "link": ""
+                }
+            ]
+        }
+    },
+    {
+        "body": {
+            "type": "index",
+            "data": [
+            {
+                "title": "Chapter 1: Introduction",
+                "subtitle": "The Problem, The Opportunity, and The Vision.",
+                "page": 4
+            },
+            {
+                "title": "Chapter 2: System Design and Architecture",
+                "subtitle": "The layers and models of our system.",
+                "page": 12
+            },
+            {
+                "title": "Chapter 3: Dataset & Data Pipeline",
+                "subtitle": "The dataset, its composition, and the preprocessing pipeline.",
+                "page": 20
+            },
+            {
+                "title": "Chapter 4: System Implementation & Overview",
+                "subtitle": " Authentication, Complaint Submission, and Routing.",
+                "page": 26
+            },
+            {
+                "title": "Chapter 5: Conclusion and Future Work",
+                "subtitle": "The impact of NAWAH and the path forward.",
+                "page": 36
+            }
+            
+            ]
+        }
+    },
+    {   
+    "body": {
+        "type": "break",
+        "data": "Chapter 1",
+        "metadata": "Introduction",
+        "subtitle": "The Problem, The Opportunity, and The Vision."
+    }
+
+},
+    {
+    "body": {
+        "type": "break",
+        "data": "\"What is the purpose of Digitalization and Technology,If we are not making a real difference in people's lives.?\"",
+        "metadata": "_______________"
+    }
+},
+{
+    "title": "The Digital Transformation of Public Services",
+    "subtitle": "When Technology Meets Governance, Everything Changes.",
+    "body": {
+        "type": "text",
+        "data": [
+            "Across the world, governments are undergoing a fundamental shift. Services that once required physical presence, long queues, and mountains of paperwork are being replaced by **Digital Platforms** that are faster, more transparent, and more accessible.",
+            "---",
+            "Citizens today expect the same seamless experience from their government that they get from their bank, their hospital, and their delivery app. A complaint that once took weeks to reach the right department can now be submitted, classified, and routed **In Seconds**.",
+            "---",
+            "But digitization alone is not enough. **Moving a broken process online does not fix the process.** Without intelligence behind the interface, complaints still get lost, priorities still go unrecognized, and the citizen on the other end still waits.",
+            "---",
+            "This is where **Artificial Intelligence** changes the equation. Not just automating the intake of complaints, but understanding them, classifying them, sensing urgency, forecasting where problems are growing, and surfacing the right action to the right authority **Before the Situation Escalates**."
+            
+        ]
+    }
+},
+{
+    "body": {
+        "type": "break",
+        "data": [
+            "\"NAWAH   was built on this premise:   that a government complaint system should not just receive. It should Listen, Understand, and Act.\""
+        ],
+            "metadata": 
+"_______________"
+}
+}
+,
+ {
+    "title": "The Problem With Today's Complaint Systems",
+    "subtitle": "Digitization Without Intelligence Is Just a Faster Way to Get Lost.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**No Intelligence Behind the Intake** — Complaints arrive as raw text with no automatic category, no urgency detection, and no sentiment signal."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**No Priority Detection** — When everything is treated equally, nothing urgent gets treated urgently. A collapsing water network generates the same response as a single billing inquiry."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**No Trend Visibility** — Complaints are processed one by one with no system-wide view. A surge across three governorates is invisible until it becomes a crisis."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**No Forecasting** — Systems are entirely reactive. There is no mechanism to anticipate where complaints will concentrate next month or where to pre-position resources."
+            },
+            {
+                "index": [2, 0],
+                "type": "text",
+                "data": "**No Arabic NLP** — Egypt's citizens write in colloquial Egyptian Arabic. Most off-the-shelf NLP pipelines fail silently, producing classifications that mean nothing."
+            },
+            {
+                "index": [2, 1],
+                "type": "text",
+                "data": "**No Citizen Guidance** — The citizen submits into a black box and waits. No assistant helps them phrase the complaint, confirm the category, or set expectations."
+            }
+        ]
+    }
+},
+{
+    "title": "Why Existing Solutions Fall Short",
+    "subtitle": "The Gap Between What Is Available and What Is Actually Needed.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Basic Ticketing Systems** digitize the submission process but add no intelligence. Complaints are manually reviewed and manually routed — the bottleneck simply moves online."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Generic AI Platforms** are built for English or Modern Standard Arabic, trained on product reviews, and optimized for brand sentiment — not Egyptian government services."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**No existing solution** combines Arabic NLP, multi-category classification, sentiment-driven priority scoring, time-series forecasting, and a citizen assistant — in one platform built for Egypt."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**NAWAH** was built to fill exactly that gap."
+            }
+        ]
+    }
+},
+{
+    "title": "The Capability Gap — By The Numbers",
+    "subtitle": "How NAWAH Compares Against What Already Exists.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [1], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "bar",
+                "data": {
+                    "Arabic NLP": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 40, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 95, "color": "#16a34a" }
+                    ],
+                    "Priority Scoring": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 30, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 90, "color": "#16a34a" }
+                    ],
+                    "Forecasting": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 10, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 90, "color": "#16a34a" }
+                    ],
+                    "Citizen Assistant": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 50, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 95, "color": "#16a34a" }
+                    ]
+                }
+            },
+            {
+                "index": [0, 1],
+                "type": "bar",
+                "data": {
+                    "Dialect Coverage": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 25, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 90, "color": "#16a34a" }
+                    ],
+                    "Real-Time Dashboard": [
+                        { "label": "Basic Ticketing", "value": 20, "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 60, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 95, "color": "#16a34a" }
+                    ],
+                    "Complaint Routing": [
+                        { "label": "Basic Ticketing", "value": 30, "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 55, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 95, "color": "#16a34a" }
+                    ],
+                    "Trend Forecasting": [
+                        { "label": "Basic Ticketing", "value": 0,  "color": "#dc2626" },
+                        { "label": "Generic AI",      "value": 15, "color": "#c9a84c" },
+                        { "label": "NAWAH",           "value": 90, "color": "#16a34a" }
+                    ]
+                }
+            }
+        ]
+    }
+},
+{
+    "title": "NAWAH — The Intelligent Answer",
+    "subtitle": "Six Components. One Platform. Built for Egypt's Government Services.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Sentiment Analysis** — Detects emotional tone of every complaint: positive, negative, or neutral. Built on TF-IDF and Logistic Regression, trained on colloquial Egyptian Arabic."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Category Classification** — Automatically assigns each complaint to one of seven government service categories, routing it to the right authority without manual review."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Recommendation Engine** — Combines volume, growth rate, and sentiment to compute a priority score — high, medium, or low — surfacing what needs attention most urgently."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Forecasting Model** — Uses Facebook Prophet to predict complaint volume for the next six months, enabling proactive resource allocation before surges occur."
+            },
+            {
+                "index": [2, 0],
+                "type": "text",
+                "data": "**Conversational Chatbot** — Powered by Groq and Llama 3.3, guides citizens through submitting complaints step by step in Arabic or English."
+            },
+            {
+                "index": [2, 1],
+                "type": "text",
+                "data": "**Analytics Dashboard** — Visualizes complaint distribution, sentiment trends, priority breakdowns, forecast charts, and the most frequent words in citizen complaints."
+            }
+        ]
+    }
+},
+
+{
+    "body": {
+        "type": "break",
+        "data": "Chapter 2",
+        "metadata": "System Design & Architecture"
+    }
+},
+{
+    "title": "System Architecture",
+    "subtitle": "Four Layers. One Pipeline. From Citizen Input to Government Action.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Frontend Layer** — A browser-based interface built with HTML, CSS, and JavaScript. Communicates exclusively through HTTP to the backend, never touching models or database directly."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Backend Layer** — FastAPI with modular blueprints: authentication, complaint submission, appointment booking, dashboard, recommendations, forecasting, and the chatbot route."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**AI Model Layer** — Four independently trained components: sentiment classifier, category classifier, recommendation engine, and Prophet forecasting model. Loaded once at startup, reused across all requests."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Database Layer** — SQLite via SQLAlchemy ORM. Three core tables: Users, Complaints, and Appointments — all linked through foreign key relationships."
+            }
+        ]
+    }
+},
+{
+    "title": "Database Design",
+    "subtitle": "Three Tables. One Source of Truth. Every Citizen Interaction Captured.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Users Table** — Stores national ID, full name, email, phone, governorate, gender. National ID, email, and phone are each enforced unique at the database level."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Complaints Table** — Stores raw complaint text alongside AI-populated fields: predicted category, detected sentiment, and computed priority. Status tracks open → in review → resolved."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Appointments Table** — Records service category, date, time slot (9AM–3PM hourly), and an optional note. A uniqueness constraint on category + date + time slot eliminates double-booking at the database level."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Relationships** — Both Complaints and Appointments link to Users via foreign key. One user, many complaints and appointments. Cascade delete ensures data integrity."
+            },
+            {
+                "index": [2, 0],
+                "type": "text",
+                "data": "**Roles** — Three user types are enforced via a database enum: citizen, government employee, and admin. Role is stored in the session on login and checked by every protected route."
+            },
+            {
+                "index": [2, 1],
+                "type": "text",
+                "data": "**Categories** — Seven service categories enforced as a database enum: Housing, Taxes, Health, Roads, Water, Supply, and Electricity — preventing invalid values at the schema level."
+            }
+        ]
+    }
+},
+{
+    "title": "Arabic NLP — Preprocessing Pipeline",
+    "subtitle": "Before Any Model Sees the Text, It Must Be Normalized.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**The Challenge** — Egyptian citizens write in colloquial Arabic with inconsistent spelling, no diacritics, and mixed character forms. Raw text fed directly to a model produces noise, not signal."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Character Normalization** — Collapses variant forms of common Arabic letters into a single canonical form. Different shapes of alef ( الألف) and yaa (ياء) are unified before any feature extraction."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Diacritic & Punctuation Removal** — Strips optional vowel marks that appear inconsistently in informal writing, then removes punctuation that adds no classification value."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Stopword Filtering** — Removes high-frequency Arabic function words: prepositions, conjunctions, and pronouns that carry no discriminative signal for sentiment or category classification."
+            }
+        ]
+    }
+},
+{
+    "title": "Arabic NLP — Sentiment & Category Models",
+    "subtitle": "TF-IDF + Logistic Regression. Two Models, One Shared Architecture.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**TF-IDF Vectorization** — Converts preprocessed Arabic text into numerical features using unigrams and bigrams. Down-weights terms that are too common or too rare to be discriminative."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Sentiment Model** — Classifies complaints as positive, negative, or neutral. Balanced class weights compensate for the natural dominance of negative complaints in any government complaint dataset."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Category Classifier** — Predicts one of seven service categories directly from complaint text. If no category is selected by the user, the model fills it automatically at submission time."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Evaluation Approach** — Stratified train-test split, accounting for the template-based nature of the dataset and its limited unique-sample count."
+            }
+        ]
+    }
+},
+{
+    "title": "Recommendation Engine",
+    "subtitle": "From Raw Complaint Volume to Actionable Government Priority.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Priority Score** — Computed from two inputs: complaint growth rate (weighted at 60%) and total complaint volume (40%). Score is boosted when dominant sentiment is negative."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Priority Levels** — Score maps to three tiers: High (70+), Medium (40–69), Low (below 40). Each tier triggers a different set of recommended government actions."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Dynamic Recommendations** — Each output references the specific category and governorate provided as input, ensuring recommendations are directly actionable rather than generic."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Integration** — Exposed via a single API endpoint consumed by both the citizen-facing recommendations page and the administrative dashboard's priority flagging logic."
+            }
+        ]
+    }
+},
+{
+    "title": "Forecasting Model",
+    "subtitle": "Predicting Tomorrow's Complaint Volume From Today's Trends.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Prophet** — Facebook's open-source time-series library, chosen for its reliability with limited historical data, native yearly seasonality modeling, and built-in confidence interval output."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Monthly Aggregation** — Individual complaint records are aggregated into monthly totals before training. Weekly and daily seasonality are disabled — monthly data removes any meaningful sub-monthly pattern."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Six-Month Forecast** — The model produces a predicted complaint count plus lower and upper confidence bounds for each of the next six months beyond the last observed data point."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Pre-Computed Output** — Forecast results are saved to disk after training. The backend reads pre-computed predictions rather than running Prophet on every request, keeping response times instant."
+            }
+        ]
+    }
+},
+{
+    "title": "Conversational Chatbot",
+    "subtitle": "A Domain-Constrained Assistant That Speaks Arabic and English.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Groq + Llama 3.3** — Powered by a free LLM inference provider, selected to keep the system fully cost-accessible. The model handles both Arabic and English with no language switching required from the citizen."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Prompt Engineering** — A carefully structured system prompt constrains responses to the platform's valid categories, governorates, and service types. The model cannot invent services that don't exist."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Complaint Flow** — Guides citizens through submission one step at a time: describe the complaint, confirm the category, confirm the governorate, review details, and confirm submission."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Session Memory** — Full conversation history is maintained per session and sent with every request, allowing the model to reference earlier turns without the citizen repeating themselves."
+            }
+        ]
+    }
+},
+{
+    "body": {
+        "type": "break",
+        "data": "Chapter 3",
+        "metadata": "Dataset & Data Pipeline"
+    }
+},
+{
+    "title": "The Dataset",
+    "subtitle": "59,559 Records. 27 Governorates. 7 Categories.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Scale** — 59,559 complaint records spanning all 27 Egyptian governorates, covering 7 government service categories, with date, sentiment label, category label, complaint text, and official resolution text per row."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Template-Based Structure** — Complaints follow structured government templates, ensuring consistent formatting and coverage across all service categories and governorates."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Language** — All complaints are written in colloquial Egyptian Arabic, requiring a dedicated preprocessing pipeline before any model can extract meaningful features."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Labeling** — Each record carries two ground-truth labels: a sentiment label (positive, negative, neutral) and a category label — making it directly usable for supervised classification training."
+            }
+        ]
+    }
+},
+{
+    "title": "Dataset Evaluation Strategy",
+    "subtitle": "Honest Evaluation on a Structured Dataset.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Train-Test Split** — Dataset is split 80% for training and 20% for evaluation, with stratification applied to preserve class distribution proportions across both sets."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Class Balancing** — Balanced class weights are applied during training to compensate for the natural dominance of negative complaints in any government complaint dataset."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Built-In Diagnostics** — The training pipeline includes a data sanity check step that reports class distribution and flags any anomalies before model training begins."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Consistent Preprocessing** — Both models share the same preprocessing pipeline, ensuring that training-time and inference-time text normalization are always identical."
+            }
+        ]
+    }
+},
+{
+    "title": "Dataset Composition",
+    "subtitle": "Category and Sentiment Distribution Across All Records.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [1], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "pie",
+                "data": {
+                    "الإسكان":  { "value": 18, "color": "#2563eb" },
+                    "الضرائب":  { "value": 15, "color": "#c9a84c" },
+                    "الصحة":    { "value": 17, "color": "#16a34a" },
+                    "الطرق":    { "value": 16, "color": "#dc2626" },
+                    "المياه":   { "value": 17, "color": "#7c3aed" },
+                    "التموين":  { "value": 10, "color": "#0891b2" },
+                    "الكهرباء": { "value": 7,  "color": "#1a2744" }
+                }
+            },
+            {
+                "index": [0, 1],
+                "type": "pie",
+                "data": {
+                    "سلبي":    { "value": 65, "color": "#dc2626" },
+                    "محايد":   { "value": 20, "color": "#94a3b8" },
+                    "إيجابي":  { "value": 15, "color": "#16a34a" }
+                }
+            }
+        ]
+    }
+},
+{
+    "title": "The Preprocessing Pipeline",
+    "subtitle": "Four Steps That Turn Raw Colloquial Arabic Into Clean Model Input.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Step 1 — Character Normalization** — Collapses orthographic variants: all alef forms (أ إ آ ا) → ا, yaa variants (ي ى) → ي, waw hamza (ؤ) → و. Eliminates spelling inconsistency before any feature extraction."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Step 2 — Diacritic Removal** — Strips Arabic vowel marks (Unicode range U+064B–U+065F) that appear inconsistently in informal writing and add noise rather than signal to classification."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Step 3 — Punctuation Removal** — Removes all non-word, non-space characters. Colloquial Arabic complaints frequently mix punctuation styles; stripping them prevents tokenization noise."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Step 4 — Stopword Filtering** — Removes 20+ high-frequency Arabic function words: في، من، على، إلى، و، مع، أن، كان، التي، الذي and others that carry no discriminative value for sentiment or category."
+            }
+        ]
+    }
+},
+{
+    "title": "Before & After Preprocessing",
+    "subtitle": "The Same Complaint, Raw and Cleaned.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Raw Input**"
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**After Pipeline**"
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "مش لاقي دكتور متاح للاستشاره النهارده"
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "مش لاقي دكتور متاح استشاره النهارده"
+            },
+            {
+                "index": [2, 0],
+                "type": "text",
+                "data": "الطرق الفرعيه مليانه مطبات صناعيه مش متناسقه"
+            },
+            {
+                "index": [2, 1],
+                "type": "text",
+                "data": "طرق فرعيه مليانه مطبات صناعيه مش متناسقه"
+            }
+        ]
+    }
+},
+{   
+    "body": {
+        "type": "break",
+        "data": "Chapter 4",
+        "metadata": "Implementation & System Overview"
+    }
+
+},
+{
+    "title":"Authentication & Session Management",
+    "subtitle":"How Citizens and Government Employees Log In, and How Their Session Is Maintained.",
+    "body":{
+        "type":"grid",
+        "metadata":{
+            "rows":[0,0],
+            "cols":[1,1]
+        },
+        "data":[
+            {
+                "index":[0,0],
+                "type":"text",
+                "data":"**Login Flow** — Citizens and government employees log in with their Email and password. The backend verifies credentials against the Users table and returns a session token."
+            },
+            {
+                "index":[1,0],
+                "type":"image",
+                "data":"./images/login.png"
+            },
+            {
+                "index":[0,1],
+                "type":"text",
+                "data":"**Registration Flow** — New users can create an account by providing their Email and password. The backend validates the input and stores the user information in the Users table."
+            },
+            {
+                "index":[1,1],
+                "type":"image",
+                "data":"./images/register.png"
+            }
+        ]
+    }
+},
+{
+    "title":"Complaint Submission & Routing",
+    "subtitle":"How Citizens Submit Complaints and How They Are Routed to the Right Authority.",
+    "body":{
+        "type":"grid",
+        "metadata":{
+            "rows":[0,0],
+            "cols":[1,1]
+        },
+        "data":[
+            {
+                "index":[0,0],
+                "type":"text",
+                "data":"**Submission Flow** — Citizens submit complaints through a form. The backend processes the complaint, runs it through the NLP pipeline, and stores it in the Complaints table."
+            },
+            {
+                "index":[1,0],
+                "type":"image",
+                "data":"./images/complaint_submission.png"
+            },
+            {
+                "index":[0,1],
+                "type":"text",
+                "data":"**Routing Flow** — The backend uses the category and sentiment to determine the appropriate government authority and routes the complaint accordingly."
+            },
+            {
+                "index":[1,1],
+                "type":"image",
+                "data":"./images/complaint_routing.png"
+            }]
+        }
+    },
+{
+    "title":"Dashboard & Analytics",
+    "subtitle":"How Government Employees Monitor Complaints and Make Data-Driven Decisions.",
+    "body":{
+        "type":"text",
+        "data":[
+            "The dashboard provides a real-time view of complaint volume, sentiment trends, and priority levels. Government employees can filter complaints by category, governorate, and date range to identify areas that require immediate attention. The analytics section includes visualizations of complaint distribution, sentiment analysis, and forecasting results to support proactive decision-making and resource allocation."
+        ]
+
+        }
+},
+{
+    "title":"Dashboard & Analytics",
+    "body":{
+        "type":"grid",
+        "metadata":{
+            "rows":[0],
+            "cols":[1,1]
+        },
+        "data":[
+            {
+                "index":[0,0],
+                "type":"image",
+                "data":"./images/dashboard1.png"
+            },
+            {
+                "index":[0,1],
+                "type":"image",
+                "data":"./images/dashboard2.png"
+            }
+        ]
+    }
+},
+{
+    "title":"Forecasting Model",
+    "subtitle":"How the System Predicts Future Complaint Volume.",
+    "metadata":{
+        "rows":[0,0],
+        "cols":[1]
+    },
+    "body":{
+        "type":"text",
+        "data":[
+            "The forecasting model uses historical complaint data to predict future complaint volume for the next six months. It employs Facebook Prophet to generate predictions along with confidence intervals, allowing government authorities to anticipate surges in complaints and allocate resources accordingly. The model is pre-computed and stored, ensuring that the dashboard can display predictions instantly without running the model on every request."
+        ]
+    
+    
+}
+},
+{
+    "title":"Forecasting Model",
+    "metadata":{
+        "rows":[0,0],
+        "cols":[1]
+    },
+    "body":{
+        "type":"grid",
+        "data":[
+            {
+                "index":[0,0],
+                "type":"image",
+                "data":"./images/forecast1.png"
+           },
+            {
+                "index":[1,0],
+                "type":"image",
+                "data":"./images/forecast2.png"
+            }
+        ]
+    }
+},
+{
+    "title":"Conversational Chatbot",
+    "subtitle":"How Citizens Interact with the System Using Natural Language.",
+    "body":{
+        "type":"text",
+        "data":[
+            "The conversational chatbot allows citizens to submit complaints using natural language in either Arabic or English. It guides users through the complaint submission process step by step, confirming details and ensuring that the complaint is categorized correctly. The chatbot maintains session memory, allowing it to reference previous interactions and provide a seamless user experience."
+        ]
+    }
+},
+{
+    "title":"Recommendation Engine",
+    "subtitle":"How the System Prioritizes Complaints for Government Action.",
+    "body":{
+        "type":"text",
+        "data":[
+            "The recommendation engine computes a priority score for each complaint based on its growth rate, total volume, and sentiment. Complaints are categorized into high, medium, or low priority levels, enabling government authorities to focus on the most urgent issues first. The engine provides dynamic recommendations that are specific to the complaint's category and governorate, ensuring that actions taken are directly relevant and effective."
+        ]
+    }
+},
+{
+    "title":"Conversational Chatbot",
+    "body":{
+        "type":"grid",
+        "metadata":{
+            "rows":[0],
+            "cols":[1]
+        },
+        "data":[
+            {
+                "index":[0,0],
+                "type":"image",
+                "data":"./images/chatbot.png"
+            }
+        ]
+        }
+    },
+{   
+    "body": {
+        "type": "break",
+        "data": "Chapter 5",
+        "metadata": "Conclusion & Future Work"
+    }
+
+},
+{
+    "title":"Conclusion",
+    "subtitle":"NAWAH — A Comprehensive Solution for Government Complaint Management.",
+    "body":{
+        "type":"text",
+        "data":[
+            "NAWAH addresses the critical gaps in existing government complaint management systems by integrating Arabic NLP, sentiment analysis, category classification, forecasting, and a conversational chatbot into a single platform. It empowers citizens to submit complaints easily and ensures that government authorities can respond effectively and proactively."
+        ]
+    }
+},
+{
+    "title":"Future Work",
+    "subtitle":"Enhancements and Next Steps for NAWAH.",
+    "body":{
+        "type":"text",
+        "data":[
+            "Future enhancements for NAWAH include expanding the dataset to cover more categories and governorates, improving the accuracy of the NLP models through continuous learning, integrating additional languages for broader accessibility, and developing mobile applications to increase citizen engagement. Additionally, incorporating feedback loops from government authorities will help refine the recommendation engine and forecasting model for even better performance."
+        ]
+    }
+}
+
+]
+    
