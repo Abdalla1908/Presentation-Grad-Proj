@@ -18,13 +18,13 @@
                 },
                 {
                     "title": "Mohamed Sarhan",
-                    "subtitle": "Associating in AI , NLP & Backend",
+                    "subtitle": "AI & Full Stack Engineer",
                     "image": "./images/mo_sarhan.png",
                     "link": ""
                 },
                 {
                     "title": "Abdullah Hassan",
-                    "subtitle": "Associating in AI , NLP & Backend",
+                    "subtitle": "AI , NLP & LLM Engineer",
                     "image": "./images/abdalla.jpg",
                     "link": "https://github.com/Abdalla1908"
                 },
@@ -48,7 +48,7 @@
                 },
                 {
                     "title": "Ahmed Reda",
-                    "subtitle": "Chatbot Engineer",
+                    "subtitle": " ",
                     "image": "./images/ahmed.jpg",
                     "link": ""
                 }
@@ -343,6 +343,36 @@
     }
 },
 {
+    "title": "The Dataset",
+    "subtitle": "59,559 Records. 27 Governorates. 7 Categories.",
+    "body": {
+        "type": "grid",
+        "metadata": { "rows": [0, 0], "cols": [1, 1] },
+        "data": [
+            {
+                "index": [0, 0],
+                "type": "text",
+                "data": "**Scale** — 59,559 complaint records spanning all 27 Egyptian governorates, covering 7 government service categories, with date, sentiment label, category label, complaint text, and official resolution text per row."
+            },
+            {
+                "index": [0, 1],
+                "type": "text",
+                "data": "**Template-Based Structure** — Complaints follow structured government templates, ensuring consistent formatting and coverage across all service categories and governorates."
+            },
+            {
+                "index": [1, 0],
+                "type": "text",
+                "data": "**Language** — All complaints are written in colloquial Egyptian Arabic, requiring a dedicated preprocessing pipeline before any model can extract meaningful features."
+            },
+            {
+                "index": [1, 1],
+                "type": "text",
+                "data": "**Labeling** — Each record carries two ground-truth labels: a sentiment label (positive, negative, neutral) and a category label — making it directly usable for supervised classification training."
+            }
+        ]
+    }
+},
+{
     "title": "Database Design",
     "subtitle": "Three Tables. One Source of Truth. Every Citizen Interaction Captured.",
     "body": {
@@ -536,39 +566,10 @@
     "body": {
         "type": "break",
         "data": "Chapter 3",
-        "metadata": "Dataset & Data Pipeline"
+        "metadata": "Data Pipeline"
     }
 },
-{
-    "title": "The Dataset",
-    "subtitle": "59,559 Records. 27 Governorates. 7 Categories.",
-    "body": {
-        "type": "grid",
-        "metadata": { "rows": [0, 0], "cols": [1, 1] },
-        "data": [
-            {
-                "index": [0, 0],
-                "type": "text",
-                "data": "**Scale** — 59,559 complaint records spanning all 27 Egyptian governorates, covering 7 government service categories, with date, sentiment label, category label, complaint text, and official resolution text per row."
-            },
-            {
-                "index": [0, 1],
-                "type": "text",
-                "data": "**Template-Based Structure** — Complaints follow structured government templates, ensuring consistent formatting and coverage across all service categories and governorates."
-            },
-            {
-                "index": [1, 0],
-                "type": "text",
-                "data": "**Language** — All complaints are written in colloquial Egyptian Arabic, requiring a dedicated preprocessing pipeline before any model can extract meaningful features."
-            },
-            {
-                "index": [1, 1],
-                "type": "text",
-                "data": "**Labeling** — Each record carries two ground-truth labels: a sentiment label (positive, negative, neutral) and a category label — making it directly usable for supervised classification training."
-            }
-        ]
-    }
-},
+
 {
     "title": "Dataset Evaluation Strategy",
     "subtitle": "Honest Evaluation on a Structured Dataset.",
