@@ -13,7 +13,7 @@
                 {
                     "title": "Assoc. Prof. Mahmoud Emam",
                     "subtitle": "Faculty of Artificial Intelligence",
-                    "image": "",
+                    "image": "./images/dr-mahmoud.jpeg",
                     "link": ""
                 },
                 {
@@ -43,13 +43,13 @@
                 {
                     "title": "Hend Mahmoud",
                     "subtitle": "Forecasting Model Engineer",
-                    "image": "./images/hend.png",
+                    "image": "./images/hend.jpg",
                     "link": ""
                 },
                 {
                     "title": "Ahmed Reda",
                     "subtitle": " ",
-                    "image": "./images/ahmed.png",
+                    "image": "./images/ahmed.jpg",
                     "link": ""
                 }
             ]
