@@ -900,3 +900,17 @@ video.content-media-cell {
     height: 100%;
     padding: 0.5rem;
 }
+#slide-logo {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 500;
+  pointer-events: none;
+}
+
+#slide-logo img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}

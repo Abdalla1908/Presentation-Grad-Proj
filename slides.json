@@ -6,7 +6,6 @@
             "metadata": "An AI Smart Complaint Management System"
         }
     },
-    
     {
         "body": {
             "type": "members",
@@ -344,6 +343,14 @@
     }
 },
 {
+    "title": "System Architecture Diagram",
+    "subtitle": "How the Four Layers Interact to Deliver Intelligent Complaint Management.",
+    "body": {
+        "type": "image",
+        "data": "./images/system-architecture.png"
+    }
+},
+{
     "title": "The Dataset",
     "subtitle": "59,559 Records. 27 Governorates. 7 Categories.",
     "body": {
@@ -444,6 +451,14 @@
     }
 },
 {
+    "title": "Arabic NLP — Preprocessing Pipeline",
+    "subtitle": "Before Any Model Sees the Text, It Must Be Normalized.",
+    "body": {
+        "type": "image",
+        "data": "./images/arabic-nlp.png"
+    }
+},
+{
     "title": "Arabic NLP — Sentiment & Category Models",
     "subtitle": "TF-IDF + Logistic Regression. Two Models, One Shared Architecture.",
     "body": {
@@ -473,6 +488,7 @@
         ]
     }
 },
+
 {
     "title": "Recommendation Engine",
     "subtitle": "From Raw Complaint Volume to Actionable Government Priority.",
@@ -531,6 +547,14 @@
                 "data": "**Pre-Computed Output** — Forecast results are saved to disk after training. The backend reads pre-computed predictions rather than running Prophet on every request, keeping response times instant."
             }
         ]
+    }
+},
+{
+    "title": "Forecasting Model",
+    "subtitle": "Predicting Tomorrow's Complaint Volume From Today's Trends.",
+    "body": {
+        "type": "image",
+        "data": "./images/forecast-pipeline.png"
     }
 },
 {
